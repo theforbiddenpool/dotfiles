@@ -1,0 +1,40 @@
+# programs to start on startup
+exec --no-startup-id picom
+exec --no-startup-id bash ~/.config/polybar/launch.sh --colorblocks
+#exec --no-startup-id xfce4-power-manager --daemon
+#exec --no-startup-id xss-lock ~/bin/lockscreen
+#exec --no-startup-id xautolock -time 5 -locker "bash lockscreen.sh"
+exec_always --no-startup-id feh --bg-fill ~/pictures/wallpapers/P1000676.JPG
+
+# application assignment to specific workspaces
+#assign [class="^Code$"] → $ws3
+#assign [class="(?i)soffice"] → $ws4
+#assign [class="^Inkscape$"] → $ws4
+#assign [class="^dolphin$"] → $ws5
+assign [class="^TelegramDesktop$"] → $ws7
+assign [class="^Signal$"] → $ws7
+assign [class="^discord$"] → $ws7
+#assign [class="^vlc$"] → $ws7
+assign [class="^Steam$"] → $ws8
+assign [class="^qBittorrent$"] → $ws9
+
+# immediately focus on window after opening it
+for_window [class="^Termite$"] focus
+
+# floating windows
+for_window [title="Steam - News" class="^Steam$"] floating enable
+for_window [title="Friends List" class="^Steam$"] floating enable
+for_window [instance="^Places$" class="^firefox$"] floating enable
+for_window [instance="^Devtools$" class="^firefox$"] floating enable
+for_window [class="^Pavucontrol$"] floating enable
+for_window [class="^SpeedCrunch$"] floating enable
+for_window [class="^Anki$"] floating enable
+for_window [window_role="^GtkFileChooserDialog$"] resize set 855px 475px
+for_window [window_role="^GtkFileChooserDialog$"] move position center
+for_window [class="^Blueman-manager$"] floating enable
+for_window [class="^Nm-connection-editor$"] floating enable
+for_window [class="^zoom$"] floating enable
+for_window [class="^zoom$"] move position center
+
+# sticky floating windows
+for_window [title="Picture-in-Picture" class="^firefox$" floating] sticky enable

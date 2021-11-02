@@ -1,0 +1,64 @@
+// Custom keyboard
+// Colemak programming with latin accents
+partial alphanumeric_keys
+xkb_symbols "colemakwp" {
+ 
+    include "us"
+    name[Group1]= "English (Colemak Programming)";
+ 
+    key <TLDE> { [   numbersign,     EuroSign,        sterling,             cent ] };
+    key <AE01> { [       exclam,   exclamdown,           U2190,      onesuperior ] };
+    key <AE02> { [     asterisk,  asciicircum,       masculine,      twosuperior ] };
+    key <AE03> { [    parenleft,    braceleft,     ordfeminine,    threesuperior ] };
+    key <AE04> { [   parenright,   braceright,           U2192,              yen ] };
+    key <AE05> { [        minus,   underscore,          endash,           emdash ] };
+    key <AE06> { [        equal,   onequarter,         hstroke,          Hstroke ] };
+    key <AE07> { [    backslash,      onehalf,        multiply,         division ] };
+    key <AE08> { [         plus, leftsinglequotemark,    slash,          radical ] };
+    key <AE09> { [      greater, rightsinglequotemark,  asterisk,  leftdoublequotemark ] };
+    key <AE10> { [         less,      percent,            plus,  rightdoublequotemark ] };
+    key <AE11> { [        slash,           at,           minus,          notsign ] };
+    key <AE12> { [     question, questiondown,         section,            U2713 ] };
+ 
+    key <AD01> { [            q,            Q,     acircumflex,      Acircumflex ] };
+    key <AD02> { [            w,            W,          atilde,           Atilde ] };
+    key <AD03> { [            f,            F,          agrave,           Agrave ] };
+    key <AD04> { [            p,            P,          otilde,           Otilde ] };
+    key <AD05> { [            b,            B,              oe,               OE ] };
+    key <AD06> { [          bar,    brokenbar,         dstroke,          Dstroke ] };
+    key <AD07> { [            j,            J,         lstroke,          Lstroke ] };
+    key <AD08> { [            l,            L,               7,                7 ] };
+    key <AD09> { [            u,            U,               8,                8 ] };
+    key <AD10> { [            y,            Y,               9,                9 ] };
+    key <AD11> { [    semicolon,        colon,   guillemotleft,        0x1002039 ] };
+    key <AD12> { [     quotedbl,       dollar,  guillemotright,        0x100203a ] };
+ 
+    key <AC01> { [            a,            A,          aacute,           Aacute ] };
+    key <AC02> { [            r,            R,          iacute,           Iacute ] };
+    key <AC03> { [            s,            S,          eacute,           Eacute ] };
+    key <AC04> { [            t,            T,          oacute,           Oacute ] };
+    key <AC05> { [            g,            G,  dead_diaeresis,           0x0020 ] };
+    key <AC06> { [   dead_acute,   dead_tilde, dead_circumflex,       dead_grave ] };
+    key <AC07> { [            k,            K,          period,           period ] };
+    key <AC08> { [            n,            N,               4,                4 ] };
+    key <AC09> { [            e,            E,               5,                5 ] };
+    key <AC10> { [            i,            I,               6,                6 ] };
+    key <AC11> { [            o,            O,               0,                0 ] };
+    key <BKSL> { [   apostrophe,        grave,          ssharp,           0x0020 ] };
+ 
+    key <LSGT> { [            z,            Z,          uacute,           Uacute ] };
+    key <AB01> { [            x,            X,     ocircumflex,      Ocircumflex ] };
+    key <AB02> { [            c,            C,        ccedilla,         Ccedilla ] };
+    key <AB03> { [            d,            D,     ecircumflex,      Ecircumflex ] };
+    key <AB04> { [            v,            V,              ae,               AE ] };
+    key <AB05> { [  bracketleft,    copyright,     dead_macron,           0x0020 ] };
+    key <AB06> { [ bracketright,   registered,          ntilde,           Ntilde ] };
+    key <AB07> { [            m,            M,               0,                0 ] };
+    key <AB08> { [            h,            H,               1,                1 ] };
+    key <AB09> { [        comma,    ampersand,               2,                2 ] };
+    key <AB10> { [       period,   asciitilde,               3,                3 ] };
+ 
+    key <SPCE> { [        space,        space,           space,     nobreakspace ] };
+ 
+    include "level3(ralt_switch)"
+};

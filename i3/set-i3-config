@@ -1,0 +1,16 @@
+#!/bin/bash
+DOTFILES_DIR="~/dotfiles/i3"
+I3_CONFIG_FILE="~/.config/i3/config"
+
+function concat_files {
+  cat $DOTFILES_DIR/shortcuts $DOTFILES_DIR/look $DOTFILES_DIR/apps > $I3_CONFIG_FILE
+}
+
+function restart {
+  i3-msg "restart"
+  polybar-msg cmd restart
+}
+
+concat_files
+restart
+
