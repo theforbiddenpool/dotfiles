@@ -131,6 +131,7 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 2 &
 bindsym XF86MonBrightnessUp exec xbacklight -inc 2 &
 bindsym Print exec scrot 'Screenshot_%Y-%m-%d_%H%M%S.png' -e 'mv $f ~/pictures/screenshots && nomacs ~/pictures/screenshots/$f' -u
 bindsym Shift+Print exec spectacle
+bindsym Control+space exec dunstctl close &
 
 # others
 bindsym $mod+p exec --no-startup-id play -p main
