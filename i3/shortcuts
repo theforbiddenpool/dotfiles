@@ -113,15 +113,15 @@ bindsym $mod+Shift+r restart
 
 # exiting and locking i3
 bindsym $mod+Shift+e exec bash ~/.config/polybar/colorblocks/scripts/powermenu.sh &
-bindsym $mod+Shift+x exec bash ~/bin/lockscreen
+bindsym $mod+Shift+x exec bash lockscreen
 bindsym $mod+Shift+z exec dm-tool switch-to-greeter
 
 # rofi
 bindsym $mod+d exec bash ~/.config/polybar/colorblocks/scripts/launcher.sh &
 
 # media keys & printScreen
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume $(bash /home/$USER/bin/get-active-sink) +2%
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume $(bash /home/$USER/bin/get-active-sink) -2%
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume $(bash get-active-sink) +2%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume $(bash get-active-sink) -2%
 bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
