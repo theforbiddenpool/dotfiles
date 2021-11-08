@@ -127,8 +127,8 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 bindsym XF86AudioStop exec playerctl stop
 bindsym XF86AudioMute exec amixer set Master toggle
-bindsym XF86MonBrightnessDown exec xbacklight -dec 2 & 
-bindsym XF86MonBrightnessUp exec xbacklight -inc 2 &
+bindsym XF86MonBrightnessDown exec change-brightness.sh dec 2
+bindsym XF86MonBrightnessUp exec change-brightness.sh inc 2
 bindsym Print exec scrot 'Screenshot_%Y-%m-%d_%H%M%S.png' -e 'mv $f ~/pictures/screenshots && nomacs ~/pictures/screenshots/$f' -u
 bindsym Shift+Print exec spectacle
 bindsym Control+space exec dunstctl close &
