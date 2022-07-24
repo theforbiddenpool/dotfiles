@@ -1,0 +1,34 @@
+{
+  "workbench.colorTheme": "Dracula",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.fontSize": 12,
+  "editor.tabSize": 2,
+  "editor.fontFamily": "'Material-Design-Iconic-Font', 'Fira Code', 'Droid Sans Mono', monospace, 'Font Awesome 6 Brands', 'Font Awesome 6 Free', 'Font Awesome 6 Free Solid'",
+  "editor.fontLigatures": true,
+  "editor.smoothScrolling": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "explorer.confirmDragAndDrop": false,
+  "vsicons.dontShowNewVersionMessage": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/node_modules": true,
+    "node_modules": true
+  },
+  "markdown-pdf.styles": ["pdf_style.css"],
+  "markdown-pdf.stylesRelativePathFile": true,
+  "markdown-pdf.displayHeaderFooter": false,
+}
