@@ -1,2 +1,7 @@
+# system related
+.directory
+
+# temporary files
 arch-install/old
 arch-install/test.sh
+
