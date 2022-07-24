@@ -51,7 +51,7 @@ xkb_symbols "colemakwp" {
     key <AB02> { [            c,            C,        ccedilla,         Ccedilla ] };
     key <AB03> { [            d,            D,     ecircumflex,      Ecircumflex ] };
     key <AB04> { [            v,            V,              ae,               AE ] };
-    key <AB05> { [  bracketleft,    copyright,     dead_macron,           0x0020 ] };
+    key <AB05> { [  bracketleft,       degree,       copyright,      dead_macron ] };
     key <AB06> { [ bracketright,   registered,          ntilde,           Ntilde ] };
     key <AB07> { [            m,            M,               0,                0 ] };
     key <AB08> { [            h,            H,               1,                1 ] };
