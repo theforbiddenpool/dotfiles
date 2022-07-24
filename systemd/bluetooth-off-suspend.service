@@ -1,0 +1,11 @@
+[Unit]
+Description=Kill bluetooth before suspend
+Before=sleep.target
+
+[Service]
+Type=oneshot
+ExecStart=/home/maritimus/bin/turn-on-bluetooth.sh off 
+
+[Install]
+WantedBy=sleep.target
+
